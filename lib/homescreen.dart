@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todoapp/appthem.dart';
 import 'package:todoapp/main.dart';
-import 'package:todoapp/taps/tasks/settings/settingstap.dart';
+import 'package:todoapp/taps/settings/settingstap.dart';
 import 'package:todoapp/taps/tasks/tasktap.dart';
 
 class Homescreen extends StatefulWidget {
