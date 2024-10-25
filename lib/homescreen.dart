@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:todoapp/appthem.dart';
 import 'package:todoapp/main.dart';
 import 'package:todoapp/taps/settings/settingstap.dart';
+import 'package:todoapp/taps/tasks/add_tasks_tap_sheet.dart';
 import 'package:todoapp/taps/tasks/tasktap.dart';
 
 class Homescreen extends StatefulWidget {
@@ -36,7 +37,10 @@ class _HomescreenState extends State<Homescreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () => showModalBottomSheet(
+          context: context,
+          builder: (_) => AddTasksTapSheet(),
+        ),
         child: Icon(size: 32, Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

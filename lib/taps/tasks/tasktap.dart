@@ -17,13 +17,13 @@ class Tasktap extends StatelessWidget {
               color: Appthem.primary,
             ),
             PositionedDirectional(
-              start: 40,
+              start: 30,
               top: 45,
               child: Text(
-                'To Do List',
+                'ToDo List',
                 style: Theme.of(context)
                     .textTheme
-                    .titleLarge
+                    .titleMedium
                     ?.copyWith(color: Appthem.white, fontSize: 22),
               ),
             ),
